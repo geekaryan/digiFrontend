@@ -1,0 +1,13 @@
+.heading{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 22px;
+    font-family: cursive;
+    
+}
+
+.container{
+    background-color: rgb(188, 188, 235);
+    height: 100vh;
+    cursor: pointer;
+}

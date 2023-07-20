@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 16px;
+    background-color: rgb(107, 221, 150);
+    padding: 12px;
+    font-family: monospace;
+}

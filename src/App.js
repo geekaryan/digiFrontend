@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootPage from "./pages/RootPage";
+import DataPage from "./pages/DataPage";
+import AddPage from "./pages/AddPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const route = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootPage />,
+  },
+  {
+    path: "/users",
+    element: <DataPage />,
+  },
+  {
+    path: "/addUser",
+    element: <AddPage />,
+  },
+]);
+
+const App = () => {
+  return <RouterProvider router={route} />;
+};
 
 export default App;
